@@ -2,3 +2,5 @@ node_modules/
 dist/
 *.tgz
 .ai/.agentlink-state.json
+.npmrc
+.env

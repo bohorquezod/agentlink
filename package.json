@@ -1,6 +1,6 @@
 {
-  "name": "agentlink",
-  "version": "0.1.0",
+  "name": "@borasta/agentlink",
+  "version": "1.0.0",
   "description": "Manage symlinks from a canonical .ai folder to multiple agentic IDE configurations",
   "type": "module",
   "main": "./dist/index.js",
