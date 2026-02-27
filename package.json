@@ -1,0 +1,52 @@
+{
+  "name": "agentlink",
+  "version": "0.1.0",
+  "description": "Manage symlinks from a canonical .ai folder to multiple agentic IDE configurations",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "agentlink": "./bin/ag.js",
+    "ag": "./bin/ag.js"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest --config jest.config.ts",
+    "test:watch": "NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest --config jest.config.ts --watch",
+    "test:e2e": "NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest --config jest.e2e.config.ts",
+    "test:all": "npm run test && npm run test:e2e",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "ai",
+    "symlink",
+    "ide",
+    "cursor",
+    "claude",
+    "codex",
+    "windsurf",
+    "opencode",
+    "agentlink"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.0.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
+    "tsup": "^8.0.0",
+    "typescript": "^5.7.0"
+  }
+}

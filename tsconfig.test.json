@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "declaration": false,
+    "sourceMap": false,
+    "types": ["node", "jest"],
+    "paths": {
+      "@core/*": ["src/core/*"],
+      "@adapters/*": ["src/adapters/*"],
+      "@commands/*": ["src/commands/*"],
+      "@test/*": ["src/__tests__/*"]
+    }
+  },
+  "include": ["src", "test-e2e"]
+}
