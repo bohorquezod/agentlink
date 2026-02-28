@@ -71,7 +71,7 @@ describe('E2E: unlink', () => {
     expect(await isSymlink(path.join(tmpDir, 'CLAUDE.md'))).toBe(false);
     expect(
       await isSymlink(
-        path.join(tmpDir, '.cursor', 'rules', 'AGENTS.md'),
+        path.join(tmpDir, 'AGENTS.md'),
       ),
     ).toBe(true);
   });

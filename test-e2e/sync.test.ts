@@ -70,12 +70,22 @@ describe('E2E: sync', () => {
 
     expect(
       await isSymlink(
-        path.join(tmpDir, '.cursor', 'rules', 'AGENTS.md'),
+        path.join(tmpDir, 'AGENTS.md'),
       ),
     ).toBe(true);
     expect(
       await isSymlink(
         path.join(tmpDir, '.cursor', 'skills', 'coding.md'),
+      ),
+    ).toBe(true);
+    expect(
+      await isSymlink(
+        path.join(tmpDir, '.cursor', 'agents', 'reviewer.md'),
+      ),
+    ).toBe(true);
+    expect(
+      await isSymlink(
+        path.join(tmpDir, '.cursor', 'commands', 'deploy.md'),
       ),
     ).toBe(true);
   });

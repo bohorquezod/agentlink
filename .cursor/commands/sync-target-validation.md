@@ -1,0 +1,1 @@
+../../.ai/commands/sync-target-validation.md

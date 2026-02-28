@@ -65,7 +65,7 @@ Each adapter only links the categories that the IDE actually supports, based on 
 | Target | IDE | Root doc | Skills | Agents | Commands |
 |--------|-----|----------|--------|--------|----------|
 | `claude` | Claude Code | `CLAUDE.md` | `.claude/skills/` | `.claude/agents/` | `.claude/commands/` |
-| `cursor` | Cursor | `.cursor/rules/AGENTS.md` | `.cursor/skills/` | -- | -- |
+| `cursor` | Cursor | `AGENTS.md` | `.cursor/skills/` | `.cursor/agents/` | `.cursor/commands/` |
 | `codex` | Codex CLI | `AGENTS.md` | -- | -- | -- |
 | `opencode` | OpenCode | `AGENTS.md` | `.opencode/skills/` | `.opencode/agents/` | `.opencode/commands/` |
 | `windsurf` | Windsurf | `.windsurf/rules/AGENTS.md` | -- | -- | -- |
@@ -132,11 +132,11 @@ When you run `ag claude`, `agentlink`:
 ### Example: Cursor mapping
 
 ```
-.ai/AGENTS.md                            →  .cursor/rules/AGENTS.md
+.ai/AGENTS.md                            →  AGENTS.md
 .ai/skills/coding-standards/SKILL.md     →  .cursor/skills/coding-standards/SKILL.md
+.ai/agents/reviewer.md                   →  .cursor/agents/reviewer.md
+.ai/commands/deploy.md                   →  .cursor/commands/deploy.md
 ```
-
-(Cursor does not support agents or commands, so those are skipped.)
 
 ### Example: Codex mapping
 

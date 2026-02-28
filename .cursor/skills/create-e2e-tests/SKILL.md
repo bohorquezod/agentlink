@@ -1,0 +1,1 @@
+../../../.ai/skills/create-e2e-tests/SKILL.md

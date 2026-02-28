@@ -1,0 +1,1 @@
+../../.ai/commands/adapter-change-safety.md

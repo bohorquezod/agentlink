@@ -1,0 +1,1 @@
+../../.ai/agents/docs-maintainer.md
