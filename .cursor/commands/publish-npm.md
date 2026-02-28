@@ -1,0 +1,1 @@
+../../.ai/commands/publish-npm.md
