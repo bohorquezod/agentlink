@@ -1,0 +1,1 @@
+../../.ai/commands/run-all-tests-and-fix.md

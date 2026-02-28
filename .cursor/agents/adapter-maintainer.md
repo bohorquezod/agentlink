@@ -1,0 +1,1 @@
+../../.ai/agents/adapter-maintainer.md

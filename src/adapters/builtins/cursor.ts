@@ -4,6 +4,8 @@ export const cursorAdapter: IdeAdapter = {
   id: 'cursor',
   name: 'Cursor',
   description: 'Cursor AI IDE',
-  rootDocs: [{ source: 'AGENTS.md', target: '.cursor/rules/AGENTS.md' }],
+  rootDocs: [{ source: 'AGENTS.md', target: 'AGENTS.md' }],
   skills: { dir: '.cursor/skills' },
+  agents: { dir: '.cursor/agents' },
+  commands: { dir: '.cursor/commands' },
 };

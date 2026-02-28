@@ -1,0 +1,1 @@
+../../.ai/agents/core-sync-engineer.md

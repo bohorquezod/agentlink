@@ -1,0 +1,1 @@
+../../../.ai/skills/create-skill/SKILL.md
